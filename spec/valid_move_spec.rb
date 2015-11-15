@@ -10,7 +10,7 @@ describe './lib/valid_move.rb' do
   end
 
   it 'returns nil or false for an occupied position' do
-    board = [" ", " ", " ", " ", "X", " ", " ", " ", " "]
+    board = [" ", " ", " ", " ", " ", "X", " ", " ", " "]
     position = "5"
     
     expect(valid_move?(board, position)).to be_falsey
